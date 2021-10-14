@@ -13,8 +13,26 @@
                             {{ session('status') }}
                         </div>
                     @endif
-
-                    {{ __('You are logged in!') }}
+                    <table class="table">
+                        <thead>
+                          <tr>
+                            <th scope="col">No</th>
+                            <th scope="col">Name</th>
+                            <th scope="col">Email</th>
+                            <th scope="col">Car</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                            {{-- @foreach ( as ) --}}
+                            <tr>
+                                <th scope="row">1</th>
+                                <td>Mark</td>
+                                <td>Otto</td>
+                                <td>@mdo</td>
+                            </tr>
+                            {{-- @endforeach --}}
+                        </tbody>
+                      </table>
                 </div>
             </div>
         </div>
